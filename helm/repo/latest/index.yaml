@@ -3,10 +3,10 @@ entries:
   scylla:
   - apiVersion: v2
     appVersion: latest
-    created: "2022-09-29T13:44:05.644359219-07:00"
+    created: "2022-09-29T13:56:06.55910935-07:00"
     description: Scylla is a close-to-the-hardware rewrite of Cassandra in C++. It
       is a drop-in replacement for Cassandra and uses the same interfaces.
-    digest: 3f3d2f7d9a6b40278728f2ba89c519aff4b2211ad6e7870bdd7ccf9615f1bab6
+    digest: e17ca370b31c09384de25c8f6b747e4e71685b336aecb8498b252cf95e2a0deb
     home: https://www.scylladb.com/
     icon: https://www.scylladb.com/wp-content/uploads/brand-logo-vert@2x.png
     keywords:
@@ -22,18 +22,18 @@ entries:
     - https://github.com/scylladb/scylla-operator
     - https://github.com/scylladb/scylla
     urls:
-    - https://scylla-operator-charts.storage.googleapis.com/latest/scylla-v1.7.4-patched-1-g4569c54.tgz
-    version: v1.7.4-patched-1-g4569c54
+    - scylla-v1.7.4-patched-2-g7d42797.tgz
+    version: v1.7.4-patched-2-g7d42797
   scylla-manager:
   - apiVersion: v2
     appVersion: latest
-    created: "2022-09-29T13:44:05.642046167-07:00"
+    created: "2022-09-29T13:56:06.556860814-07:00"
     dependencies:
     - name: scylla
       repository: file://../scylla
       version: 1.0.0
     description: Scylla Manager automates database operations.
-    digest: 35cfd27ba720d0ab1ab5999aa521d3d7d6becb25567d6340b8fd11ba9de98cda
+    digest: c9003cc96a59c3625577bdcc0210729c9ea5263f6c8aa06c6ad83fcc44d07924
     home: https://www.scylladb.com/
     icon: https://www.scylladb.com/wp-content/uploads/scylla-manager.png
     keywords:
@@ -49,15 +49,15 @@ entries:
     sources:
     - https://github.com/scylladb/scylla-operator
     urls:
-    - https://scylla-operator-charts.storage.googleapis.com/latest/scylla-manager-v1.7.4-patched-1-g4569c54.tgz
-    version: v1.7.4-patched-1-g4569c54
+    - scylla-manager-v1.7.4-patched-2-g7d42797.tgz
+    version: v1.7.4-patched-2-g7d42797
   scylla-operator:
   - apiVersion: v2
     appVersion: latest
-    created: "2022-09-29T13:44:05.643491587-07:00"
+    created: "2022-09-29T13:56:06.558296306-07:00"
     description: Scylla Operator is a Kubernetes Operator for managing and automating
       tasks related to managing a Scylla clusters.
-    digest: 9011243c4784e62e657eee6a81554b6ca5c39c902d15002cee000debc1e512f1
+    digest: ea77b72bb7bf4086fa98caffa3a695d0420ce424cbefca83f05c2778ae484948
     home: https://www.scylladb.com/
     icon: https://github.com/scylladb/scylla-operator/raw/master/logo.png
     keywords:
@@ -72,6 +72,6 @@ entries:
     sources:
     - https://github.com/scylladb/scylla-operator
     urls:
-    - https://scylla-operator-charts.storage.googleapis.com/latest/scylla-operator-v1.7.4-patched-1-g4569c54.tgz
-    version: v1.7.4-patched-1-g4569c54
-generated: "2022-09-29T13:44:05.640130062-07:00"
+    - scylla-operator-v1.7.4-patched-2-g7d42797.tgz
+    version: v1.7.4-patched-2-g7d42797
+generated: "2022-09-29T13:56:06.554870697-07:00"
