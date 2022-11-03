@@ -1,0 +1,77 @@
+apiVersion: v1
+entries:
+  scylla:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-11-03T10:20:41.306679341-07:00"
+    description: Scylla is a close-to-the-hardware rewrite of Cassandra in C++. It
+      is a drop-in replacement for Cassandra and uses the same interfaces.
+    digest: 207041673855471a8165349e5f6e720bbf1c3b0b6a5cdada90c36e6157391820
+    home: https://www.scylladb.com/
+    icon: https://www.scylladb.com/wp-content/uploads/brand-logo-vert@2x.png
+    keywords:
+    - scylla
+    - scylladb
+    - scylla-operator
+    - operator
+    maintainers:
+    - email: maciej@scylladb.com
+      name: Maciej Zimnoch
+    name: scylla
+    sources:
+    - https://github.com/scylladb/scylla-operator
+    - https://github.com/scylladb/scylla
+    urls:
+    - scylla-v1.7.4-patched-36-gbe0d886.tgz
+    version: v1.7.4-patched-36-gbe0d886
+  scylla-manager:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-11-03T10:20:41.305004369-07:00"
+    dependencies:
+    - name: scylla
+      repository: file://../scylla
+      version: 1.0.0
+    description: Scylla Manager automates database operations.
+    digest: 21087049bccb38a74a79227db2fae0cdd3ae9b4b8f5f2c6ea2b931386463f2e9
+    home: https://www.scylladb.com/
+    icon: https://www.scylladb.com/wp-content/uploads/scylla-manager.png
+    keywords:
+    - scylla
+    - scylladb
+    - scylla-manager
+    - scylla-operator
+    - operator
+    maintainers:
+    - email: maciej@scylladb.com
+      name: Maciej Zimnoch
+    name: scylla-manager
+    sources:
+    - https://github.com/scylladb/scylla-operator
+    urls:
+    - scylla-manager-v1.7.4-patched-36-gbe0d886.tgz
+    version: v1.7.4-patched-36-gbe0d886
+  scylla-operator:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-11-03T10:20:41.305964751-07:00"
+    description: Scylla Operator is a Kubernetes Operator for managing and automating
+      tasks related to managing a Scylla clusters.
+    digest: 68af0fc738c939325e308da583b901198111fba790b60689b9ef00b0a452a7a4
+    home: https://www.scylladb.com/
+    icon: https://github.com/scylladb/scylla-operator/raw/master/logo.png
+    keywords:
+    - scylla
+    - scylladb
+    - scylla-operator
+    - operator
+    maintainers:
+    - email: maciej@scylladb.com
+      name: Maciej Zimnoch
+    name: scylla-operator
+    sources:
+    - https://github.com/scylladb/scylla-operator
+    urls:
+    - scylla-operator-v1.7.4-patched-36-gbe0d886.tgz
+    version: v1.7.4-patched-36-gbe0d886
+generated: "2022-11-03T10:20:41.302210898-07:00"
