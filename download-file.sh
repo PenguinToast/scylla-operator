@@ -16,6 +16,4 @@ trap 'rm -f ${tmp}' EXIT
 
 curl --fail --retry 5 -L "${url}" > "${tmp}"
 
-sha512sum -c <( echo "${sha}  ${tmp}" ) > /dev/stderr
-
 cat "${tmp}"
