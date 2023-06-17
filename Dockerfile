@@ -11,7 +11,7 @@ COPY ./download-file.sh /tmp/
 ARG TARGETARCH
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends git make tar gzip curl && \
+    apt-get install -y --no-install-recommends git make tar gzip curl ca-certificates && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     /tmp/download-file.sh https://go.dev/dl/go1.20.3.linux-${TARGETARCH}.tar.gz '469ff06d6b86d201bcf01abbb6eed6897091afed2fd47726d90589424e4abd9a561cc24c8c2a5ce3a172a8905bfcdb35e32aef4a72ad380584f549fd20cb1d42' | tar -C /usr/local -xzf - && \
