@@ -7,7 +7,7 @@ ENV PATH=${PATH}:${GOROOT}/bin:${GOPATH}/bin
 COPY ./download-file.sh /tmp/
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends git make tar gzip curl ca-certificates && \
+    apt-get install -y --no-install-recommends git make tar gzip curl ca-certificates jq && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     /tmp/download-file.sh https://go.dev/dl/go1.19.8.linux-arm64.tar.gz | tar -C /usr/local -xzf - && \
